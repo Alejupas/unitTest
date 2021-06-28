@@ -9,9 +9,14 @@ function divide(n1, n2) {
   return n1 / n2;
 }
 
+function showValue(val) {
+  return val;
+}
+
 console.log(add(5, 10));
 
 module.exports = {
   add,
   divide,
+  showValue,
 };

@@ -11,5 +11,8 @@ it('should return copy of array', () => {
 it('should contain value', () => {
   const arr = [1, 4, 8];
   const val = 4;
+  expect(arr).toContain(val);
   expect(includesValue(arr, val)).toBeTruthy();
 });
+
+it('should ', () => {});

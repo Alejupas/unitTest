@@ -1,5 +1,5 @@
 //isitraukti reikiama funkcija
-const { add, divide } = require('./func');
+const { add, divide, showValue } = require('./func');
 
 //test, 1. ka testuojam, 2. arrow funkcija
 test('add function should add 5 and 10 to get the sum of 15', () => {
@@ -16,6 +16,14 @@ test('divide by 0 returns null', () => {
   expect(divide(20, 0)).toBe(null);
   expect(divide(20, 0)).toBeNull();
   expect(divide(20, 0)).toBeDefined();
+});
+
+it('should be falsy', () => {
+  // expect(showValue(5)).toBeFalsy();
+  expect(showValue(0)).toBeFalsy();
+  expect(showValue(' ')).toBeFalsy();
+  expect(showValue(undefined)).toBeFalsy();
+  expect(showValue(null)).toBeFalsy();
 });
 
 // if (add(1, 6) !== 7) throw new Error('wrong');

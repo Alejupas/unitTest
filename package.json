@@ -23,5 +23,8 @@
   "homepage": "https://github.com/Alejupas/unitTest#readme",
   "devDependencies": {
     "jest": "^27.0.5"
+  },
+  "dependencies": {
+    "axios": "^0.21.1"
   }
 }

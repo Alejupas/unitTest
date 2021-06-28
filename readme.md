@@ -22,6 +22,8 @@ it arba test shortcut writes test template!
     "testC": "jest --coverage"
 
 rodo lentele, visus failus, ir papke sukuria coverage
+
+plius node direktorija/failas.js ir node rodo ta faila
 \*\*
 
 8. add second expect with diff numbers, in func.js insert return 15

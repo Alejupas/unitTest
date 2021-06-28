@@ -17,7 +17,7 @@
 \*\*
 ctrl shift p > jest > start all runners(mes iskart prie func ok ar not)
 
-it shortcut writes test template!
+it arba test shortcut writes test template!
 
     "testC": "jest --coverage"
 

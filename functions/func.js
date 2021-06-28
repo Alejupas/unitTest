@@ -13,10 +13,15 @@ function showValue(val) {
   return val;
 }
 
-console.log(add(5, 10));
+function notMoreThan(val) {
+  const goods1 = 200;
+  const good2 = 150;
+  return goods1 + good2 < val ? true : false;
+}
 
 module.exports = {
   add,
   divide,
   showValue,
+  notMoreThan,
 };

@@ -40,7 +40,7 @@ test('should less than 400(val)', () => {
 
 //string regex
 it('team should not contain I', () => {
-  expect('teamI').not.toMatch(/I/);
+  expect('teamI').not.toMatch(/I/i);
   expect('+3706215242').toMatch(/\+370/);
   expect('+3746215242').toMatch(/\+370/);
 });

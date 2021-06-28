@@ -1,4 +1,5 @@
 'use strict';
+
 const people = [
   {
     id: 'it51',
@@ -67,6 +68,10 @@ const people = [
     devices: ['laptop', 'tablet', 'phone'],
   },
 ];
+
+function allPeople() {
+  return people;
+}
 
 // console.log(people);
 
@@ -205,7 +210,8 @@ let nutrintas = people.map(noSexNameSurname);
 console.table(nutrintas);
 console.table(people);
 
-// 10. Pagal people masyvą, naudojant Array.prototype.map, suformuokite masyvą kur savybės name ir surname būtų pakeistos viena savybe - fullname
+// 10. Pagal people masyvą, naudojant Array.prototype.map, suformuokite masyvą kur
+// savybės name ir surname būtų pakeistos viena savybe - fullname
 
 let nameSurnameArr = people.map((person) => {
   // nusikopojuoti objekta
@@ -240,3 +246,23 @@ people.sort((a, b) => {
 
 console.log('after sort', people);
 console.table(people, ['age', 'name', 'income']);
+
+function returnDrivers(arr) {
+  // {male: 5, female: 4}
+  const result = {
+    male: 0,
+    female: 0,
+  };
+  arr.forEach((p) => {
+    if (p.hasCar) {
+      p.sex === 'male' ? result.male++ : result.female++;
+    }
+  });
+  return result;
+}
+
+module.exports = {
+  returnDrivers,
+  allPeople,
+  noSexNameSurname,
+};
